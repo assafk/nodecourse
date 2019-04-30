@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+    <h1>Create new user</h1>
+    <form method="POST" enctype="multipart/form-data" action="/user">
+      <div class="form-group"><label>Picture:</label><input type="file" name="picture"/></div>
+      <div class="form-group"><label>Name:</label><input name="name"/></div>
+      <div class="form-group"><label>Age:</label><input name="age"/></div>
+      <div class="form-group"><label>Country:</label><input name="country"/></div>
+      <div class="form-group"><label>City:</label><input name="city"/></div>
+      <input type="submit" value="Submit" class="submit"/>
+    </form>
+  </body>
+</html>

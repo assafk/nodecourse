@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+label {
+  flex: none;
+  display: block;
+  width: 100px;
+}
+
+input {
+  flex: 1 1 auto;
+}
+
+.submit {
+  width: 150px;
+}
