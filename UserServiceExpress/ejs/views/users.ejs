@@ -1,0 +1,10 @@
+<html><body><h1>USERS!</h1><ul>
+  <% users.forEach(function(item) { %>
+    <li>
+        <h1><%= item.name %></h1>
+        <h3>age: <%= item.age %></h3>
+        <h3>country: <%= item.country %></h3>
+        <h3>city: <%= item.city %></h3>
+      </li>
+  <% }) %>  
+</ul>
