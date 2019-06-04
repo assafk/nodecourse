@@ -1,0 +1,18 @@
+CREATE DATABASE app;
+GRANT ALL PRIVILEGES ON app.* TO 'app'@'%' WITH GRANT OPTION;
+
+use app;
+
+CREATE TABLE orders (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY
+);
+
+CREATE TABLE products (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  order_id INT(6) UNSIGNED,
+  quantity INT,
+  FOREIGN KEY (order_id)
+        REFERENCES orders(id)
+        ON DELETE CASCADE
+);
